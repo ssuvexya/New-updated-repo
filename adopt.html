@@ -1,0 +1,217 @@
+<!doctype.html>
+<head>
+<title>Adopt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="shortcut icon" icon="image/png" href="logo.png">
+<style>
+
+body{
+                  margin:0;
+                  padding:0;
+	 width:100vw;
+	 height:100vh;
+	 background-image:url("dog1.jpg");
+	 background-position:center center;
+	 background-repeat:no-repeat;
+	 background-attachment:fixed;
+	 -webkit-background-size:cover;
+}
+
+.form{
+     width:400px;
+	padding:80px 40px;
+	padding-left:40%;
+	padding-right:30%;
+	background:rgba(0,0,0,0.5);	
+}
+
+.form h3{
+     margin:0;
+	 padding-top:10px;
+	 padding-bottom:20px;
+	 color:#fff;
+	 text-align:center;
+	 text-transform:uppercase;
+}
+
+.form h1{
+     margin:0;
+	 padding-top:30px;
+	 padding-bottom:20px;
+	 color:#fff0a5;
+	 text-align:center;
+	 text-transform:uppercase;
+}
+
+.form p,label{
+     margin:0;
+     padding:0;	
+     font-weight:bold;
+     color:#fff;
+font-size:20px;	 
+		 
+}
+
+form input{
+     width:100%;
+	 margin-bottom:20px;
+}
+
+.form input[required=text],
+.form input[required=email],
+.form input[required=number],
+.form input[type=text]{
+     border:none;
+     border-bottom:1px solid #fff;
+	 background:transparent;
+	 outline:none;
+	 height:35px;
+	 color:#fff;
+	 font-size:20px;
+}
+.form input[type=submit]{
+     height:30px;
+	 color:#fff;
+	 font-size;
+	 background: red;
+	 cursor:pointer;
+	 border-radius:25px;
+	 border:none;
+	 outline:none;
+	 margin-top:15%;
+	 text-transform:uppercase;
+	 font-size:17px;
+}
+.form input[type=radio]{
+     width:5%;
+}
+ol{
+    color:#fff;
+}
+
+	.mainnav {
+		background:black;	
+		width:100%;
+		height:10%;
+		position:fixed;
+		
+	}
+
+	.mainnav a{
+			float: left;
+			display: block;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			padding:14px 18px;
+			font-family: 'Roboto Slab', serif;
+			font-size: 30px;
+
+	}
+	.mainnav a:hover {
+			background-color:#ddd;
+			color: black;
+	}
+	
+
+	.logo img{
+			width: 60px;
+			height:64px;
+			float: left;
+			position:fixed;
+	}
+	.mainnav-right {
+		float: right;
+	}
+	.row{
+			max-width:1500px;
+			margin: auto;
+	}
+	
+</style>
+</head>
+<body>
+    <div class="mainnav">
+    <div class="row">
+		<div class="logo">
+			<img src="logo.png">	
+		</div>
+		<div class="mainnav-right">
+		<center>
+		<a href="website.html">Home</a>
+		<a href="aboutus.html" >About us</a>
+		<a class="active" href="adopt.html" >Adopt </a>
+		<a href="funds.html" >Funds</a>
+		<a href="contact.html" >Contact us</a>
+		</center>
+		</div>
+	</div>
+	</div>
+    <div class="form">
+	
+	<form action="website.html" onsubmit="myfunction()">
+	<h1>Registration Form</h1>
+	<h3>Personal Information</h3>
+	    <p>Name of the Pet Parent</p>
+		<input required="text" name="FirstName" placeholder="First">
+        <input required="text" name="LastName" placeholder="Last">
+		<p>Name of the Pet You Wish to Adopt</p>
+		<input required="text">
+		<p>Email</p>
+		<input required="text"  placeholder="Email">
+		<p>Contact</p>
+		<input required="text" placeholder="Areacode" min="3">
+		<input required="text" placeholder="Phone Number" max="10">
+		<label>Address</label>
+		<p>Street</p><input required="text">
+		<p>City</p><input required="text">
+        <label>Gender:</label>
+        <p><input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <input type="radio" name="Gender">Others</p>
+		<h3>Pet information</h3>
+		<label>Number of pets adoption</label>
+       <select>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+	  		<p>Do you own any pets?</p>
+		 <p><input type="radio" name="pets">Yes
+        <input type="radio" name="pets">No</p>
+		<p>Pet's Name and Breed</p>
+		<input type="text" >
+		<input type="text" >
+		<p>Pets behavior towards other pets?</p>
+		<input type="text">
+		
+		<p>If you have to leave town, emergently or planned, where would your pet stay?</p>
+		<input required="text" >
+		<p>How would you deal with behavioral issues such as barking, chewing, destructive behavior, bathroom accidents indoors, unruly leash behaviors in your pet?</p>
+		<input required="text">
+		<p>Please provide the names, emails, and contact numbers for 3 personal references:</p>
+		<input required="textarea">
+		<input required="textarea">
+		<input required="textarea">
+		<ol type="circle">
+		<li>By clicking the submit button, I verify all of the above information is true and accurate.</li>
+		<li>By clicking the submit button, I understand that if I no longer want my pet, or am no longer able to care for my adopted pet, I will be directed to surrender my pet to Happy Paws. and provide transport to where Happy Paws. deems appropriate. </li>
+		<li>By clicking the submit button,if I no longer want or can no longer care for my adopted pet,  I agree to notify Happy Paws. BY EMAIL and provide a 14 day period to allow Gone to the Dogs Rescue Inc. to make arrangents for my pet to be taken back into rescue.</li>
+		<li>By clicking the submit button, I agree that if i am unable to take good care of my pet,Happy Paws can take necessary actions for my behaviour and i will accept it.</li>
+		<input type="submit"  Value="Submit"  formaction="regg.html">
+		
+	</form>
+	<script>
+		function myFunction(){
+			alert("Your Form Has Been Submitted!")
+			}
+	</script>
+			
+			
+	</script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<title>FUNDS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" icon="image/png" href="logo.png">
+</head>
+<body>
+	<div class="mainnav">
+	<div class="row">
+		<div class="logo">
+			<img src="logo.png">	
+		</div>
+		<div class="mainnav-right">
+	<center>
+		<a href="website.html">Home</a>
+		<a href="aboutus.html" >About us</a>
+		<a href="adopt.html" >Adopt </a>
+		<a href="funds.html" >Funds</a>
+		<a href="contact.html" >Contact us</a>
+	</center>
+		</div>
+</div>
+</div>
+<br>
+<div class="container">
+  <form name="DonationForm" id="form" action="feedback.html" onsubmit="return handleSubmit()">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+	
+	<label for="email">Email</label>
+	<input type="text" id="email" name="email" placeholder="myexample@gmail.com">
+	
+	<label for="card">Credit Card</label>
+	<input type="number" id="card" name="card" placeholder="Your Card No.">
+	
+	<label for="city">City</label>
+	<input type="text" id="city" name="city" placeholder="Kathmandu">
+
+        <label for="street">Street</label>
+	<input type="text" id="street" name="street" placeholder="Street Address">
+	
+	<label for "code">Zip/Postal Code</label>
+	<input type="text" id="code" name="code">
+	
+	<label for="number">Phone Number</label>
+	<input type="number" id="number" name="number">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="nepal">Nepal</option>
+      <option value="india">India</option>
+      <option value="china">China</option>
+    </select>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</body>
+<script>
+	        function handleSubmit(){
+			         var name = document.DonationForm.name.value;
+					 if (name===""){
+					           alert("Name Should Not Be Empty!")
+							   return false;
+					 }
+					 var email = document.DonationForm.email.value;
+					 if (email===""){
+					           alert("Email Should Not Be Empty!")
+							   return false;
+					 }
+					 var card = document.DonationForm.card.value;
+					 if (card===""){
+		                       alert("Card Number Should Be 15")	
+                               return false;							   
+					 }
+					 var number = document.DonationForm.number.value;
+					 if(number===""){
+					           alert("Number Should Be 10!")
+							   return false;
+					 }		   
+					 var code = document.DonationForm.code.value;
+					 if(code===""){
+					           alert=("Code Should Not Be Empty")
+                               return false;							   
+					 } 
+					 var city = document.DonationForm.city.value;
+					 if(city===""){
+					           alert=("City Should Not Be Empty")
+							   return false;
+					 }
+					 var street = document.DonationForm.street.value;
+					 if (street===""){
+					           alert("StreetShould Not Be Empty!")
+							   return false;
+							   }
+					 }
+</script>
+</html>
